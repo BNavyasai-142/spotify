@@ -185,7 +185,7 @@ a{
 }
 .album {
     width: 25%;
-    background-color: orange;
+    /* background-color: orange; */
 }
 .player {
     width: 50%;
@@ -214,17 +214,46 @@ a{
     appearance: none;
     background-color: transparent;
     cursor: pointer;
+    /* margin-left: 5px; */
 }
 .progress-bar::-webkit-slider-runnable-track{
     background-color: #ddd;
     border-radius: 100px;
     height: 0.2rem;
 }
-progress-bar::-webkit-slider-thumb{
+.progress-bar::-webkit-slider-thumb{
     appearance: none;
     height: 1rem;
     width: 1rem;
-    background-color: aquamarine;
+    background-color: #1bd760;
     border-radius: 100%;
-    margin-top: -8px;
+    margin-top: -6px;
+}
+.infodiv {
+   display: flex;
+   justify-content: space-between;
+   margin: 2px;
+}
+.infodiv img {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 5px;
+    border-radius: 5px;
+}
+.infotitle{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 14px 0;
+    margin-right: 6px;
+
+}
+.imgtitle {
+    opacity: 1;
+}
+.imginf {
+    opacity: 0.5;
+}
+.inficons {
+    align-self: center;
+    padding: 8px;
 }
