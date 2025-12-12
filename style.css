@@ -192,8 +192,10 @@ a{
 
 }
 .controls{
+    display: flex;
     width: 25%;
-    background-color: rgb(180, 27, 27);
+    justify-content: center;
+    align-items: center;
 }
 .player-control-icon {
     height: 1rem;
@@ -256,4 +258,27 @@ a{
 .inficons {
     align-self: center;
     padding: 8px;
+}
+.playbar{
+    height: 0.3rem;
+    width: 7.5rem;
+    cursor: pointer;
+}
+.playbar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+}
+.playbar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 100%;
+    margin-top: -6px;
+}
+.play {
+    opacity: 0.9;
+}
+.play i:hover {
+    color: #1bd760;
 }
